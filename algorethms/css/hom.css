@@ -1,0 +1,584 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #030303dc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #0303032a;
+}
+::-webkit-scrollbar-thumb{
+    background-color: white;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.contener{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.up_scroll{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
+    transition: 1s;
+    position: fixed;
+    top: 80%;
+    left: 90%;
+    cursor: pointer;
+    animation-name: up_animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    display: none;
+}
+.up_scroll:hover{
+    background-color: black;
+    color: white;
+}
+
+@keyframes up_animation {
+    from{
+        top: 80%;
+        left: 90%;
+    }
+    to{
+        top: 75%;
+        left: 90%;
+    }
+    
+}
+/*---------------     heder style      -------------*/
+
+
+.header_contener{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border-bottom: 2px solid white;
+    position: relative;
+}
+.titel_contener{
+    width: 60%;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    line-height: 80px;
+}
+.nihon{
+    color: aqua;
+    font-size: 35px;
+}
+.anime{
+    color: aqua;
+    font-size: 20px;
+}
+.titel_contener h1{
+    cursor:none;
+    width: 60%;
+    padding-bottom: 10px;
+    text-shadow: 0 10px 10px black;
+}
+/* -------------------------  navbar style -----------------*/
+
+.navbar_contener{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+.navbar{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.navbar h4{
+    cursor: pointer;
+    width: 150px;
+    height: 60px;
+    margin: 10px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 10px;
+}
+.navbar div{
+    background-color:white ;
+    padding: 7px 0;
+    display: none;
+}
+
+.navbar h4:hover{
+    background-color: black;
+    color: white;
+}
+.moor:hover div{
+    display: block;
+}
+.navbar div h4{
+    margin: 7px 0px;
+    color: black;
+}
+.navbar div h4:hover{
+    color: white;
+}
+/*----------------- navbar logo style -------*/
+.navbar_logo{
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    border-radius: 7px;
+    position: absolute;
+    top: 0%;
+    right: 1px;
+    transition: 1s;
+}
+.navbar_logo div{
+    margin-top: 4px;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+}
+
+
+
+
+
+@media only screen and (max-width:886px) {
+    .header_contener{
+        width: 100%;
+    }
+    .navbar_contener{
+        width: 180px;
+        position: absolute;
+        top: 0%;
+        right:-187px;
+        transition: 1s;
+    }
+    .navbar{
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: block;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    .up_scroll{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:458px) {
+    .header_contener{
+        border: 0;
+    }
+    .titel_contener{
+        width: 100%;
+    }
+    .nihon{
+        font-size: 35px;
+    }
+    .anime{
+        font-size: 10px;
+    }
+    .titel_contener h1{
+        width: 90%;
+    }
+}
+
+
+@media only screen and (min-width:458px) and (max-width:886px) {
+    .titel_contener{
+        width: 90%;
+    }
+    .nihon{
+        font-size: 35px;
+    }
+    .anime{
+        font-size: 18px;
+    }
+    .titel_contener h1{
+        width: 100%;
+    }
+}
+/*------------------- content style ----------------*/
+.next_befour_contener{
+    width: 60%;
+    height: 60px;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+}
+.next_befour_contener div{
+    text-align: center;
+    line-height: 40px;
+    width: 100px;
+    height: 40px;
+    font-size: 22px;
+    border-radius: 10px;
+    background-color: black;
+    margin: 0px 5px;
+}
+.next_befour_contener div:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+.befour{
+    display: none;
+}
+.space{
+
+    width: 80%;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.content_contener{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding:10px 7px ;
+    padding-top: 80px;
+}
+/*------------------- slyder style ----------------*/
+.slyder{
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 10px 15px 0 #000000bd ;
+}
+/*------------------- titel contener style ----------------*/
+.anime_type_option{
+    width: 80%;
+    height: 40px;
+    text-align: center;
+    margin: auto;
+    line-height: 40px;
+}
+.anime_type_option select{   
+    width: 300px;
+    height: 30px;
+    outline: none;
+    font-size: 20px;
+    border: 0;
+    background-color: #00000075;
+    color: white;
+    border-radius: 10px;
+
+}
+.sersh_contener{
+    width:80%;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    line-height: 80px;
+}
+.sersh_contener input{
+    width: 550px;
+    height: 50px;
+    border: 0px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0px 5px;
+    outline: none;
+    
+}
+.sersh_button{
+    width: 60px;
+    height: 50px;
+    margin-top: 18px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    background-color: black;
+    border-radius: 10px;
+}
+.sersh_button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.seson_titel{
+    cursor: pointer;
+    width: 30%;
+    height: 60px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 60px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 0 10px 15px 0 #000000bd ;
+}
+/*------------------- anime seson style ----------------*/
+.animes_seson{
+    padding: 10px;
+    width: 82%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    overflow-x: scroll;
+}
+.anime_seson_card{
+    cursor: pointer;
+    width: 220px;
+    height: 330px;
+    margin: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 10px 0 #000000bd ;
+}
+.anime_seson_card img{
+    border-radius: 10px 10px 0 0;
+    width: 220px;
+    height: 250px;
+}
+.anime_seson_card :hover{
+    background-color: white;
+    color: black;
+}
+
+.anime_seson_card h2{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    height: 50px;
+    overflow: hidden;
+}
+/*------------------- anime last video style ----------------*/
+.anime_last{
+    cursor: pointer;
+    padding: 10px;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.anime_last_card{
+    width: 220px;
+    height: 330px;
+    margin: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 10px 0 #000000bd ;
+}
+.anime_last_card img{
+    border-radius: 10px 10px 0 0;
+    width: 220px;
+    height: 250px;
+    pointer-events: none;
+}
+.anime_last_card:hover{
+    background-color: white;
+    color: black;
+}
+.anime_last_card h2{
+    overflow: hidden;
+    padding-top: 20px;
+    height: 40px;
+    font-size: 20px;
+}
+/*------------------- number of last style ----------------*/
+.number{
+    position: absolute;
+    left: 3%;
+    top: 3%;
+    background-color: #0000007c;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 50px;
+    z-index: 1;
+}
+
+
+@media only screen and (max-width:563px) {
+    /*------------------- slyder style ----------------*/
+    .slyder{
+        display: none;
+    }
+    .space{
+        height: 100px;
+    }
+
+    /*------------------- serch anime style --------------------------*/
+    .sersh_contener{
+        width:100%;
+    }
+    .sersh_contener input{
+        width: 240px;
+    }
+    /*------------------- anime seson style ----------------*/
+    .seson_titel{
+        width: 300px;
+        height: 60px;
+        font-size: 20px;
+    }
+    .animes_seson{
+        width: 100%;
+    }
+    .anime_seson_card{
+        width: 120px;
+        height: 200px;
+        padding-bottom: 5px;
+    }
+    .anime_seson_card img{
+        border-radius: 10px 10px 0 0;
+        width: 120px;
+        height: 150px;
+    }
+    .anime_seson_card :hover{
+        width: 125px;
+    }
+    
+    .anime_seson_card h2{
+        overflow: hidden;
+        font-size: 15px;
+        padding-top: 7px;
+    }
+    /*------------------- anime last style ----------------*/
+    .anime_last{
+        width: 100%;
+    }
+    .anime_last_card{
+        width: 120px;
+        height: 230px;
+        padding-bottom: 0px;
+    }
+    .anime_last_card img{
+        width: 120px;
+        height: 150px;
+    }
+    .anime_last_card img:hover{
+        width: 125px;
+    }
+    .anime_last_card h2{
+        overflow: hidden;
+        font-size: 15px;
+        padding-top: 10px;
+    }
+    /*------------------- number of last style ----------------*/
+    .number{
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+    }
+    
+}
+
+
+@media only screen and (min-width:458px) and (max-width:1000px) {
+    /*------------------- anime slyder style ----------------*/
+    .slyder{
+        width: 500px;
+        height: 250px;
+        margin: auto;
+        border-radius: 10px;
+        background-image: url('./img/u.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 0 10px 15px 0 #000000bd ;
+    }
+    /*------------------- anime titel style ----------------*/
+    .seson_titel{
+        width: 300px;
+        height: 60px;
+        font-size: 20px;
+    }
+    /*------------------- anime seson style ----------------*/
+    .animes_seson{
+        width: 100%;
+    }
+    .anime_seson_card{
+        width: 120px;
+        height: 200px;
+        padding-bottom: 5px;
+    }
+    .anime_seson_card img{
+        border-radius: 10px 10px 0 0;
+        width: 120px;
+        height: 150px;
+    }
+    .anime_seson_card :hover{
+        width: 125px;
+    }
+    
+    .anime_seson_card h2{
+        overflow: hidden;
+        font-size: 15px;
+        padding-top: 7px;
+    }
+    /*------------------- anime last style ----------------*/
+    .anime_last{
+        width: 100%;
+    }
+    .anime_last_card{
+        width: 120px;
+        height: 230px;
+        padding-bottom: 0px;
+    }
+    .anime_last_card img{
+        width: 120px;
+        height: 150px;
+    }
+    .anime_last_card img:hover{
+        width: 125px;
+    }
+    .anime_last_card h2{
+        overflow: hidden;
+        font-size: 15px;
+        padding-top: 10px;
+    }
+    /*------------------- anime number of last style ----------------*/
+    .number{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+}
+
+
+@media only screen and (min-width:886px) {
+    .navbar_logo{
+        display: none;
+    }
+}
+
