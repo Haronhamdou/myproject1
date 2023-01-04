@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+}
+footer div{
+    width: 100%;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+}
+.icon-contener{
+    text-align: center;
+    background-color: #0000009a;
+}
+.icon-contener img{
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+    border-radius: 5px;
+}
+.icon-contener img:hover{
+    width: 33px;
+    height: 33px;
+}
+
+.last-site{
+    font-size: 22px;
+    color: white;
+    background-image: linear-gradient(black,#000000b6);
+}
